@@ -89,5 +89,6 @@ footer {
   .drum {
     width: 100px;
     height: 100px;
+    font-size: 3rem;
   }
 }
