@@ -42,6 +42,16 @@ footer {
 .l {
   background-image: url(./images/kick.png);
 }
+.h {
+  background-image: url(./images/fingers.png);
+  background-position: center;
+  background-size: cover;
+}
+.g {
+  background-image: url(./images/face.png);
+  background-position: center;
+  background-size: cover;
+}
 
 .white {
   color: white !important;
@@ -61,7 +71,7 @@ footer {
   opacity: 0.5;
 }
 .yellow {
-  color: yellow;
+  color: yellow !important;
 }
 .red {
   color: red;

@@ -14,7 +14,7 @@ document.addEventListener("keydown", function (event) {
   makeSound(event.key);
   animation(event.key);
 });
-
+// кадлый раз объявляеться новое переменная что бы при нажатии обрубить проигрывание старой ненужно дожидаться концаа дорожки. переменная с объектом перезаписываеться и воспроизводитсья по новой незамедлительно при нажатии.
 function makeSound(key) {
   switch (key) {
     case "w": {
@@ -52,6 +52,16 @@ function makeSound(key) {
       sound7.play();
       break;
     }
+    case "h": {
+      let sound8 = new Audio("./sounds/fingers.mp3");
+      sound8.play();
+      break;
+    }
+    case "g": {
+      let sound9 = new Audio("./sounds/badumtss.mp3");
+      sound9.play();
+      break;
+    }
     default: {
       null;
     }
@@ -61,8 +71,10 @@ function makeSound(key) {
 function animation(key) {
   let currentButton = document.querySelector("." + key);
   currentButton.classList.add("pressed");
+  currentButton.classList.add("yellow");
   setTimeout(function () {
     currentButton.classList.remove("pressed");
+    currentButton.classList.remove("yellow");
   }),
-    100;
+    5000;
 }
